@@ -8,8 +8,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
-            "WebOS","Ubuntu","Windows7","Max OS X"};
+    String[] mobileArray = {"Eldho","Roki","Abhi","adhi"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.activity_main, mobileArray);
+                R.layout.activity_listview, mobileArray);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
